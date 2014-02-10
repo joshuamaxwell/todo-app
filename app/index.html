@@ -36,8 +36,8 @@
         <div class="jumbotron">
             <h1>cool todo app</h1>
             <div class="row">
-                <div class="col-md-8">
-                    <div class="input-group todo-add-new">
+                <div class="col-xs-12">
+                    <div class="input-group todo-add-new js-new-todo">
                         <input type="text" class="form-control input-lg">
                         <span class="input-group-btn">
                             <button class="btn btn-default btn-lg" type="button">Add!</button>
@@ -47,38 +47,38 @@
                 </div>
             </div>
             <div class="panel panel-default todo-list-panel">
-                <div class="panel-heading">
+                <div class="panel-heading todos-heading">
                     <div class="row">
-                        <div class="col-sm-4 small">All</div>
-                        <div class="col-sm-4 small">Completed</div>
-                        <div class="col-sm-4 small">Incomplete</div>
+                        <div class="col-xs-4 small">All</div>
+                        <div class="col-xs-4 small">Completed</div>
+                        <div class="col-xs-4 small">Incomplete</div>
                     </div>
                 </div>
-                <div class="col-md-8 todo-items panel-body todo-items-list">
+                <div class="col-xs-12 panel-body todo-items-list">
                     <div class="todo-item row">
                         <span class="glyphicon glyphicon-pencil pull-left"></span>
-                        <div class="col-sm-9 text-left title">take out the trashtake out the trashtake out the trashtake out the trash</div>
+                        <input class="col-xs-9 text-left todo-title" value="take out the trashtake out the trashtake out the trashtake out the trash"/>
                         <span class="glyphicon pull-right glyphicon-ok"></span>
                         <span class="glyphicon pull-right glyphicon-remove"></span>
                     </div>
                     <div class="todo-item row">
                         <span class="glyphicon glyphicon-pencil pull-left"></span>
-                        <div class="col-sm-9 text-left title">take out the trashtake out the trashtake out the trashtake out the trash</div>
+                        <div class="col-xs-9 text-left todo-title">take out the trashtake out the trashtake out the trashtake out the trash</div>
                         <span class="glyphicon pull-right glyphicon-ok"></span>
                         <span class="glyphicon pull-right glyphicon-remove"></span>
                     </div>
                     <div class="todo-item row">
                         <span class="glyphicon glyphicon-pencil pull-left"></span>
-                        <div class="col-sm-9 text-left title">take out the trashtake out the trashtake out the trashtake out the trash</div>
+                        <div class="col-xs-9 text-left todo-title">take out the trashtake out the trashtake out the trashtake out the trash</div>
                         <span class="glyphicon pull-right glyphicon-ok"></span>
                         <span class="glyphicon pull-right glyphicon-remove"></span>
                     </div>                                                                         
                 </div>
-                <div class="panel-footer">
+                <div class="panel-footer todos-stats">
                     <div class="row">
-                        <div class="col-sm-4 small">stats</div>
-                        <div class="col-sm-4 small">stats</div>
-                        <div class="col-sm-4 small">stats</div>
+                        <div class="col-sm-4 small todos-total">total: ##</div>
+                        <div class="col-sm-4 col-xs-6 small todos-completed">completed: ##</div>
+                        <div class="col-sm-4 col-xs-6 small todos-incomplete">incompleted: ##</div>
                     </div>
                 </div>
             </div>

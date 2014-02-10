@@ -7,6 +7,7 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 body {
     padding-top: 20px;
     padding-bottom: 20px;
+    color: #575757;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -68,16 +69,22 @@ body {
 }
 
 .todo-items-list {
+    //remove padding from top and bottom of todo-items list
+    padding-top: 0px;
+    padding-bottom: 0px;
     .glyphicon {
         //get the glyphicons inline with text
         line-height: inherit;
-        margin-left: 10px;
+        margin-left: 2px;
         margin-right: 10px;
     }
     .todo-item {
         border-bottom: 1px solid #E1E1E1;
         &:last-child {
             border-bottom: none;
+        }
+        input {
+            border: none;
         }
     }
 }
