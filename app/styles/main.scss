@@ -62,3 +62,20 @@ body {
 .jumbotron {
     border-bottom: 0;
 }
+
+.todo-add-new {
+    margin-bottom: 20px;
+}
+
+.todo-items-list {
+    .glyphicon {
+        //get the glyphicons inline with text
+        line-height: inherit;
+    }
+    .todo-item {
+        border-bottom: 1px solid #E1E1E1;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
