@@ -71,6 +71,8 @@ body {
     .glyphicon {
         //get the glyphicons inline with text
         line-height: inherit;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .todo-item {
         border-bottom: 1px solid #E1E1E1;
