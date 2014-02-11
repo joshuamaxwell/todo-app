@@ -40,7 +40,7 @@
                     <div class="input-group todo-add-new js-new-todo">
                         <input type="text" class="form-control input-lg">
                         <span class="input-group-btn">
-                            <button class="btn btn-default btn-lg" type="button">Add!</button>
+                            <button class="btn btn-default btn-lg js-add-new" type="button">Add!</button>
                         </span>
                     </div>
                     <!-- /input-group -->
@@ -49,20 +49,20 @@
             <div class="panel panel-default todo-list-panel">
                 <div class="panel-heading todos-heading">
                     <div class="row">
-                        <div class="col-xs-4 small">All</div>
-                        <div class="col-xs-4 small">Completed</div>
-                        <div class="col-xs-4 small">Incomplete</div>
+                        <div class="col-xs-4 small filter-button js-show-all">All</div>
+                        <div class="col-xs-4 small filter-button js-show-completed">Completed</div>
+                        <div class="col-xs-4 small filter-button js-show-incomplete">Incomplete</div>
                     </div>
                 </div>
-                <div class="col-md-12 panel-body todo-items-list">
-                    <div class="todo-item row">
-                        <span class="glyphicon glyphicon-pencil pull-left"></span>
-                        <div class="col-xs-9 text-left todo-title">take out the trashtake out the trashtake out the trashtake out the trash</div>
+                <div class="col-md-12 panel-body todo-items-list js-todo-items-list">
+                    <div class="todo-item js-todo-item row">
+                        <span class="glyphicon glyphicon-pencil pull-left js-todo-edit"></span>
+                        <div class="col-xs-9 text-left todo-title js-todo-title">take out the trashtake out the trashtake out the trashtake out the trash</div>
                         <div class="btn-group">
-                            <button type="button" class="btn btn-default">
+                            <button type="button" class="btn btn-default js-todo-complete">
                                 <span class="glyphicon glyphicon-ok"></span>
                             </button>
-                            <button type="button" class="btn btn-default">
+                            <button type="button" class="btn btn-default js-todo-remove">
                                 <span class="glyphicon glyphicon-remove"></span>
                             </button>
                         </div>
@@ -92,11 +92,11 @@
                         </div>
                     </div>                                                                                            
                 </div>
-                <div class="panel-footer todos-stats">
+                <div class="panel-footer todos-stats js-todos-stats">
                     <div class="row">
-                        <div class="col-sm-4 small todos-total">total: ##</div>
-                        <div class="col-sm-4 col-xs-6 small todos-completed">completed: ##</div>
-                        <div class="col-sm-4 col-xs-6 small todos-incomplete">incompleted: ##</div>
+                        <div class="col-sm-4 small js-todos-total">total: ##</div>
+                        <div class="col-sm-4 col-xs-6 small js-todos-completed">completed: ##</div>
+                        <div class="col-sm-4 col-xs-6 small js-todos-incomplete">incompleted: ##</div>
                     </div>
                 </div>
             </div>
@@ -112,6 +112,8 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+
     <!-- endbower -->
     <!-- endbuild -->
 
