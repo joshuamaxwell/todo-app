@@ -92,6 +92,7 @@ body {
         }
         input {
             border: none;
+            border-left: 3px solid red;
         }
         &:hover .glyphicon-pencil {
             visibility: visible;
