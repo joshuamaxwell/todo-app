@@ -2,87 +2,155 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>todo app</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <!-- build:css styles/vendor.css -->
-        <!-- bower:css -->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
-        <!-- endbower -->
-        <!-- endbuild -->
-        <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
-        <!-- endbuild -->
-        <script src="bower_components/modernizr/modernizr.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>todo app</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
 
-    </head>
-    <body>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+
+</head>
+
+<body>
 
 
-        <div class="container">
-            <div class="header">
-                <h3 class="text-muted">cool todo app</h3>
+    <div class="container">
+        <div class="header">
+            <h3 class="text-muted">cool todo app</h3>
+        </div>
+
+        <div class="jumbotron">
+            <h1>cool todo app</h1>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="input-group todo-add-new js-new-todo">
+                        <input type="text" class="form-control input-lg">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default btn-lg" type="button">Add!</button>
+                        </span>
+                    </div>
+                    <!-- /input-group -->
+                </div>
             </div>
-
-            <div class="jumbotron">
-                <h1>cool todo app</h1>
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="input-group">
-                          <input type="text" class="form-control input-lg">
-                          <span class="input-group-btn">
-                            <button class="btn btn-default btn-lg" type="button">Go!</button>
-                          </span>
-                        </div><!-- /input-group -->
+            <div class="panel panel-default todo-list-panel">
+                <div class="panel-heading todos-heading">
+                    <div class="row">
+                        <div class="col-xs-4 small">All</div>
+                        <div class="col-xs-4 small">Completed</div>
+                        <div class="col-xs-4 small">Incomplete</div>
+                    </div>
+                </div>
+                <div class="col-md-12 panel-body todo-items-list">
+                    <div class="todo-item row">
+                        <span class="glyphicon glyphicon-pencil pull-left"></span>
+                        <div class="col-xs-9 text-left todo-title">take out the trashtake out the trashtake out the trashtake out the trash</div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default">
+                                <span class="glyphicon glyphicon-ok"></span>
+                            </button>
+                            <button type="button" class="btn btn-default">
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="todo-item row">
+                        <span class="glyphicon glyphicon-pencil pull-left"></span>
+                        <input class="col-xs-9 text-left todo-title" value="take out the trashtake out the trashtake out the trashtake out the trash"/>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default">
+                                <span class="glyphicon glyphicon-ok"></span>
+                            </button>
+                            <button type="button" class="btn btn-default">
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="todo-item row">
+                        <span class="glyphicon glyphicon-pencil pull-left"></span>
+                        <div class="col-xs-9 text-left todo-title">take out the trashtake out the trashtake out the trashtake out the trash</div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default">
+                                <span class="glyphicon glyphicon-ok"></span>
+                            </button>
+                            <button type="button" class="btn btn-default">
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </button>
+                        </div>
+                    </div>                                                                                            
+                </div>
+                <div class="panel-footer todos-stats">
+                    <div class="row">
+                        <div class="col-sm-4 small todos-total">total: ##</div>
+                        <div class="col-sm-4 col-xs-6 small todos-completed">completed: ##</div>
+                        <div class="col-sm-4 col-xs-6 small todos-incomplete">incompleted: ##</div>
                     </div>
                 </div>
             </div>
-
-            <div class="footer">
-                <p>♥ from the Yeoman team</p>
-            </div>
-
         </div>
 
+        <div class="footer">
+            <p>joshua maxwell</p>
+        </div>
 
-        <!-- build:js scripts/vendor.js -->
-        <!-- bower:js -->
-        <script src="bower_components/jquery/jquery.js"></script>
-        <!-- endbower -->
-        <!-- endbuild -->
+    </div>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
 
-        <!-- build:js scripts/plugins.js -->
-        <script src="bower_components/sass-bootstrap/js/affix.js"></script>
-        <script src="bower_components/sass-bootstrap/js/alert.js"></script>
-        <script src="bower_components/sass-bootstrap/js/dropdown.js"></script>
-        <script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
-        <script src="bower_components/sass-bootstrap/js/modal.js"></script>
-        <script src="bower_components/sass-bootstrap/js/transition.js"></script>
-        <script src="bower_components/sass-bootstrap/js/button.js"></script>
-        <script src="bower_components/sass-bootstrap/js/popover.js"></script>
-        <script src="bower_components/sass-bootstrap/js/carousel.js"></script>
-        <script src="bower_components/sass-bootstrap/js/scrollspy.js"></script>
-        <script src="bower_components/sass-bootstrap/js/collapse.js"></script>
-        <script src="bower_components/sass-bootstrap/js/tab.js"></script>
-        <!-- endbuild -->
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
 
-        <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+    (function(b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+            function() {
+                (b[l].q = b[l].q || []).push(arguments)
+            });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+    </script>
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="bower_components/sass-bootstrap/js/affix.js"></script>
+    <script src="bower_components/sass-bootstrap/js/alert.js"></script>
+    <script src="bower_components/sass-bootstrap/js/dropdown.js"></script>
+    <script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
+    <script src="bower_components/sass-bootstrap/js/modal.js"></script>
+    <script src="bower_components/sass-bootstrap/js/transition.js"></script>
+    <script src="bower_components/sass-bootstrap/js/button.js"></script>
+    <script src="bower_components/sass-bootstrap/js/popover.js"></script>
+    <script src="bower_components/sass-bootstrap/js/carousel.js"></script>
+    <script src="bower_components/sass-bootstrap/js/scrollspy.js"></script>
+    <script src="bower_components/sass-bootstrap/js/collapse.js"></script>
+    <script src="bower_components/sass-bootstrap/js/tab.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
 </body>
+
 </html>
