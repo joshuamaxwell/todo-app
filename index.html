@@ -1,0 +1,25 @@
+<!DOCTYPE html><!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]--><!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]--><!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]--><!--[if gt IE 8]><!--><html class=no-js><!--<![endif]--><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><title>todo app</title><meta name=description content=""><meta name=viewport content="width=device-width"><!-- Place favicon.ico and apple-touch-icon.png in the root directory --><link rel=stylesheet href=styles/vendor.css><link rel=stylesheet href=styles/e905890f.main.css><script src=bower_components/modernizr/modernizr.js></script><body><div class=container><div class=header><h3 class=text-muted>cool todo app</h3></div><div class=jumbotron><h1>cool todo app</h1><div class=row><div class=col-md-12><div class="input-group todo-add-new js-new-todo"><input class="form-control input-lg"><span class=input-group-btn><button class="btn btn-default btn-lg js-add-new" type=button>Add!</button></span></div><!-- /input-group --></div></div><div class="panel panel-default todo-list-panel"><div class="panel-heading todos-heading"><div class=row><div class="col-xs-4 small filter-button js-show-all">All</div><div class="col-xs-4 small filter-button js-show-completed">Completed</div><div class="col-xs-4 small filter-button js-show-incomplete">Incomplete</div></div></div><div class="col-lg-12 panel-body todo-items-list js-todo-items-list"><!-- //todos get inserted here                                                                                           --></div><div class="panel-footer todos-stats js-todos-stats"><div class=row><div class="col-sm-4 small js-todos-total">total: ##</div><div class="col-sm-4 col-xs-6 small js-todos-completed">completed: ##</div><div class="col-sm-4 col-xs-6 small js-todos-incomplete">incompleted: ##</div></div></div></div></div><div class=footer><p>joshua maxwell</p></div></div><script type=text/template class=todo-template><div class="todo-item js-todo-item row" id="<%= todoID %>">
+            <span class="glyphicon glyphicon-pencil pull-left js-todo-edit js-not-editing"></span>
+            <div class="col-xs-9 text-left todo-title js-todo-title"><%= title %></div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default js-todo-complete">
+                    <span class="glyphicon glyphicon-ok"></span>
+                </button>
+                <button type="button" class="btn btn-default js-todo-remove">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </button>
+            </div>
+        </div></script><script type=text/template class=todo-title-edit-template><input class="col-xs-9 text-left todo-title js-todo-title" value="<%= title %>"/></script><script type=text/template class=todo-title-template><div class="col-xs-9 text-left todo-title js-todo-title"><%= title %></div></script><script src=scripts/b6ec496b.vendor.js></script><!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --><script>(function(b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+            function() {
+                (b[l].q = b[l].q || []).push(arguments)
+            });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');</script><script src=scripts/aaf74903.plugins.js></script><script src=scripts/8848df21.main.js></script>
